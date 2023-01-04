@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Aleatory dogs...</title>
+</head>
+<body>
+  <h1>App de perritos</h1>
+
+  <span id="error"></span>
+
+  <h2>Aleatory dogs...</h2>
+  
+
+  <section id="randomDogs" class="container random-images-container">
+    <article class="card">
+      <div class="image-container">
+        
+        <img id="img1" alt="Aleatory dog photography">
+      </div>
+      <button id="btn1" >Guardar en favoritos</button>
+    </article>
+    <article class="card">
+      <div class="image-container">
+        <img id="img2" alt="Aleatory dog photography">
+      </div>
+      <button id="btn2">Guardar en favoritos</button>
+    </article>
+    <article class="card">
+      <div class="image-container">
+        <img id="img3" alt="Aleatory dog photography">
+      </div>
+      <button id="btn3">Guardar en favoritos</button>
+    </article>
+  </section>
+  <button id="reloadBtn">Reload</button>
+  
+  <section class="container favorite-images-container" id="favoritesDogs">
+
+ 
+  </section>
+  <section id="uploadingDog">
+  <h2>Sube la foto de tu perrito</h2>
+    <form id="uploadingForm">
+      <input type="file" id="file" name="file"/>
+      <button type="button" onclick="uploadDogImage()">Subir imagen</button>
+    </form>
+  </section>
+  <script src="./main.js"></script>
+</body>
+</html>
